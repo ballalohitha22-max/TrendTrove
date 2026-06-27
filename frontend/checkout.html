@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="form-container">
+
+    <form class="address-box" id="addressForm">
+
+        <h2>Delivery Address</h2>
+
+        <input type="text" id="doorno" placeholder="Door Number" required>
+
+        <input type="text" id="street" placeholder="Street" required>
+
+        <input type="text" id="area" placeholder="Area" required>
+
+        <input type="text" id="city" placeholder="City" required>
+
+        <input type="text" id="pincode" placeholder="Pincode" required>
+
+        <button type="submit">
+            Proceed
+        </button>
+
+    </form>
+
+</div>
+
+<script>
+
+document.getElementById("addressForm").addEventListener("submit", function(event){
+
+    event.preventDefault();
+
+    const doorno = document.getElementById("doorno").value.trim();
+    const street = document.getElementById("street").value.trim();
+    const area = document.getElementById("area").value.trim();
+    const city = document.getElementById("city").value.trim();
+    const pincode = document.getElementById("pincode").value.trim();
+
+    if(
+        doorno === "" ||
+        street === "" ||
+        area === "" ||
+        city === "" ||
+        pincode === ""
+    ){
+        alert("Please fill all address details.");
+        return;
+    }
+
+    window.location.href = "payment.html";
+
+});
+
+</script>
+
+</body>
+</html>

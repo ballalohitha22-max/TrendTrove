@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="checkout-container">
+
+    <h1>Select Payment Method</h1>
+
+    <div class="payment-options">
+
+        <label class="payment-card">
+            <input type="radio" name="payment" value="UPI" required>
+            <span>UPI</span>
+        </label>
+
+        <label class="payment-card">
+            <input type="radio" name="payment" value="COD">
+            <span>Cash On Delivery</span>
+        </label>
+
+    </div>
+
+    <button
+        class="proceed-btn"
+        onclick="window.location.href='success.html'">
+        PLACE ORDER
+    </button>
+
+</div>
+
+</body>
+</html>
