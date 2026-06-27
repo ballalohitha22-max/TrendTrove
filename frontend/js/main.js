@@ -1,6 +1,6 @@
-const API_URL = "https://render.com/docs/web-services#port-binding";
+const API_URL = "https://trendtrove-yrrj.onrender.com";
+
 // OPEN CATEGORY
-h
 function openCategory(category) {
     localStorage.setItem("selectedCategory", category);
     window.location.href = "category.html";
