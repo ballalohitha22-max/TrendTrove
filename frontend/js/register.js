@@ -11,7 +11,7 @@ registerForm.addEventListener("submit", async(e) => {
     const password = document.getElementById("password").value;
 
     const response = await fetch(
-        "http://localhost:5000/api/users/register",
+        "https://render.com/docs/web-services#port-binding",
         {
             method:"POST",
 
